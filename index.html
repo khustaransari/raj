@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khustar Fitness</title>
+
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('pic3.jpg');
+        color:white;
+        
+    }
+
+    .left {
+        position: absolute;
+        left: 28px;
+        top: 13px;
+
+    }
+
+    .mid {
+        display: block;
+        width: 40%;
+        margin: 20px auto;
+        height: ;
+    }
+
+    .right {
+        position: absolute;
+        right: 28px;
+        top: 13px;
+        display: inline block;
+    }
+    .navbar a 
+    {
+        color: white;
+        padding: 12px;
+         text-decoration: none;
+         padding: 36px 23px;
+         font-family: Georgia, 'Times New Roman', Times, serif;
+         font-size: 20px;
+    }
+    .navbar li
+    {
+      list-style: none;
+      display: inline-block;
+    }
+    .navbar a:hover
+    {
+        text-decoration: underline;
+        color:lightblue
+    }
+   .left img
+   {
+       width: 131px;
+       height: 110px;
+      
+   }
+   .left div
+   {
+       text-align: center;
+   }
+   .btn
+   {
+       margin: 0px 9px;
+       color: white;
+       background-color: black;
+       padding: 5px 13px;
+       font-size:18px;
+       cursor: pointer;
+       border-radius: 10px;
+   }
+   .btn:hover
+   {
+       background-color: rgb(84, 91, 99);
+   }
+   .container {
+    margin: 101px 340px;
+    height: 407px;
+    border-radius: 70px;
+
+}
+.formgroup input {
+    display: block;
+    width: 441px;
+    text-align: center;
+    margin: 8px auto;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+   .container h2{
+      text-align: center;
+      font-size: 30px;
+   }
+  .formgroup button {
+    display: block;
+    width: 469px;
+    height: 51px;
+    margin: 5px auto;
+    font-size: 19px;
+    border-radius: 18px;
+}
+input[type="email"]
+    {
+      background-color:rgb(219, 206, 179);
+      font-size: 20px;
+    }
+    input[type="text"]
+    {
+        background-color:lightsteelblue;
+        font-size: 20px;
+    }
+    input[type="password"]
+    {
+        background-color:lightgray;
+        font-size: 20px;
+    }
+    input[type="_self"]
+    {
+        background-color: lemonchiffon;
+        font-size:20px;
+    }
+    @media only screen and (max-width: 500px){
+         body
+           {background: url('1.jpg')}
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!--left class use for logo-->
+        <div class="left">
+          <img src="pic2.jpg" alt="image not found">  
+          <div>LOGO</div>
+        </div>
+        <!--mid class use for navigation bar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculater</a></li>
+                <li><a href="#">Conatact Us</a></li>
+            </ul>
+        </div>
+        <!--right class use for buttons-->
+        <div class="right">
+        <button class="btn">
+          Email Us
+        </button>
+        <button class="btn">
+         Call Us Now
+        </button>
+        </div>
+        <div class="container"> 
+            <h2>JOIN THE GYM</h2>
+            <form action="no.php" class="form">
+                <div class="formgroup">
+        <input type="text" placeholder="Enter your Name">
+        </div>
+        <div class="formgroup">
+            <input type="email" placeholder="Enter your Id">
+            </div>
+            <div class="formgroup">
+                <input type="password" placeholder="Enter your password">
+                </div>
+                <div class="formgroup">
+                    <input type="_self" placeholder="Enter your Age">
+               <button class="btn">SUBMIT</button> </div>
+        </form>
+        </div>
+        
+    </header>
+</body>
+
+</html>

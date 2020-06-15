@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More On Selector</title>
+    <style>
+   /* div li p{
+        background-color: rgba(128, 122, 116, 0.418);
+        color: rgb(209, 0, 52);
+        font-weight: bold;
+    }*/
+        div > p{/*this > property show only when paragraph directly down present in divison box)*/
+        background-color: rgba(128, 122, 116, 0.418);
+        color: rgb(209, 0, 52);
+        font-weight: bold;
+    }
+    div + p/*(this property hold when pichla sibling divison box hoga)*/
+    {
+        color:white;
+        background-color: deeppink;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+     <div class="row">
+         <ul>
+             <li class="item"><p>this is a pararaph</p></li>
+              <li>this is not effected</li>
+              <p>this is a paragraphs under ul</p>
+         </ul>
+         <p>this is paragraph</p>
+         <div>
+             <p>this is another paragraph</p>
+         </div>
+     </div>        
+    </div>
+    <p>this is third paragraph</p>
+</body>
+</html>

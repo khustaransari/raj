@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth psuedo selector</title>
+    <style>
+        .container
+        {
+            display: block;
+            width: 100px;
+            margin: auto;
+        }
+      /*  input
+        {
+            display: block;
+        }*/
+        input[type="text"]
+        {
+            border: 1px solid black;
+            padding: 10px;
+        }
+    .container a
+    {
+        text-decoration: none;
+    
+    }
+    a[target]
+    {
+        display: block;
+        font-size: 38px;
+        color: darkgreen;
+        width: 400px;
+    }
+    a[target="_self"]
+    {
+        display: block;
+        font-size: 25px;
+        color:darkmagenta;
+        width: 400px;
+    }
+    a:hover
+    {
+        background-color: cornsilk;
+        color: crimson;
+    }
+    input[type="email"]
+    {
+        color:darkviolet;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2><a href="http://google.com"target="_blank">GO TO GOOGLE</a></h2>
+        <h2><a href="http://facebook.com"target="_self">GO TO facebook</a></h2>
+        <form action=""class="form-control">
+           <div><input type="email"placeholder="Enter your Email"></div>
+            <div><input type="password"placeholder="Enter your password"></div>
+            <div>
+                <input type="submit"value="Submit">
+            </div>
+        </form>
+        <ul>
+            <li class="item" id="item-1">Item1</li>
+            <li class="item" id="item-2">Item2</li>
+            <li class="item" id="item-3">Item3</li>
+            <li class="item" id="item-4">Item4</li>
+            <li class="item" id="item-5">Item5</li>
+        </ul>
+    </div>
+</body>
+</html>
